@@ -1,0 +1,14 @@
+version: "3.4"
+
+services:
+    app:
+        container_name: google-photo-converter
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        environment:
+            - TZ=Asia/Tokyo
+        tty: true
+        stdin_open: true
+        volumes:
+            - ./:/app
