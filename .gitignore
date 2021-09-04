@@ -1,0 +1,5 @@
+*.pyc
+converted/*
+!converted/.gitkeep
+target/*
+!target/.gitkeep
